@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    TestNG Suite Configuration
+    This file tells TestNG which tests to run
+    Run all tests with: mvn test
+-->
+<suite name="Tichi Job Application Test Suite" verbose="2">
+
+    <!-- ScreenshotListener takes a screenshot after every test (PASS / FAIL / SKIP) -->
+    <listeners>
+        <listener class-name="tichi.utils.ScreenshotListener"/>
+    </listeners>
+
+    <test name="Job Application Module Tests">
+        <classes>
+            <class name="tichi.tests.JobApplicationTest"/>
+        </classes>
+    </test>
+
+</suite>
