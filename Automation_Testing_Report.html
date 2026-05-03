@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Automation Testing Report â€” Tichi App</title>
+  <title>Automation Testing Report - Tichi App</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f9; color: #222; }
 
-    /* â”€â”€ Header â”€â”€ */
     .header {
       background: linear-gradient(135deg, #1a237e 0%, #283593 60%, #3949ab 100%);
       color: #fff; padding: 40px 48px 32px;
@@ -19,17 +18,14 @@
     .header-meta span { font-size: 13px; opacity: .9; }
     .header-meta strong { opacity: 1; }
 
-    /* â”€â”€ Content â”€â”€ */
     .content { max-width: 1100px; margin: 32px auto; padding: 0 24px 60px; }
 
-    /* â”€â”€ Section headings â”€â”€ */
     .section-title {
       font-size: 17px; font-weight: 700; color: #1a237e;
       border-left: 4px solid #3949ab; padding-left: 12px;
       margin: 40px 0 16px;
     }
 
-    /* â”€â”€ Summary cards â”€â”€ */
     .summary-grid { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; }
     .card {
       flex: 1; min-width: 130px; background: #fff;
@@ -44,14 +40,12 @@
     .card.fail  .num { color: #c62828; }
     .card.skip  .num { color: #f57f17; }
 
-    /* â”€â”€ Environment table â”€â”€ */
     .env-table { width: 100%; border-collapse: collapse; background: #fff;
       border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.07); }
     .env-table td { padding: 11px 18px; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
     .env-table tr:last-child td { border-bottom: none; }
     .env-table td:first-child { font-weight: 600; color: #555; width: 200px; background: #fafafa; }
 
-    /* â”€â”€ Results table â”€â”€ */
     .results-table { width: 100%; border-collapse: collapse; background: #fff;
       border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.07); font-size: 14px; }
     .results-table thead tr { background: #1a237e; color: #fff; }
@@ -72,7 +66,6 @@
     .tc-id   { font-weight: 700; color: #3949ab; white-space: nowrap; }
     .note-bug { font-size: 12px; color: #c62828; font-weight: 600; }
 
-    /* â”€â”€ Bug report â”€â”€ */
     .bug-box {
       background: #fff3f3; border: 1.5px solid #ef9a9a;
       border-radius: 10px; padding: 20px 24px;
@@ -82,7 +75,6 @@
     .bug-row { display: flex; gap: 8px; margin: 6px 0; font-size: 14px; }
     .bug-row .label { font-weight: 600; color: #555; min-width: 130px; }
 
-    /* â”€â”€ Screenshots â”€â”€ */
     .ss-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
     .ss-card {
       background: #fff; border-radius: 10px; overflow: hidden;
@@ -99,7 +91,6 @@
     .dot.pass { background: #2e7d32; }
     .dot.fail { background: #c62828; }
 
-    /* â”€â”€ Footer â”€â”€ */
     .footer {
       text-align: center; padding: 28px;
       font-size: 12px; color: #999; border-top: 1px solid #e8e8e8;
@@ -109,12 +100,9 @@
 </head>
 <body>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     HEADER
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <div class="header">
   <h1>Automation Testing Report</h1>
-  <p>Tichi App â€” Job Application &amp; Search Feature Module</p>
+  <p>Tichi App &mdash; Job Application &amp; Search Feature Module</p>
   <div class="header-meta">
     <span><strong>Date:</strong> 03 May 2026</span>
     <span><strong>Tester:</strong> Paramesh</span>
@@ -126,7 +114,6 @@
 
 <div class="content">
 
-  <!-- â•â•â•â• 1. SUMMARY â•â•â•â• -->
   <div class="section-title">1. Test Execution Summary</div>
   <div class="summary-grid">
     <div class="card total"><div class="num">13</div><div class="lbl">Total Tests</div></div>
@@ -135,14 +122,13 @@
     <div class="card skip"> <div class="num">0</div> <div class="lbl">Skipped</div></div>
   </div>
   <p style="margin-top:12px; font-size:13px; color:#555;">
-    The 1 failure is <strong>intentional</strong> â€” TC-JA-013 is a bug-detection test written to confirm BUG-012.
+    The 1 failure is <strong>intentional</strong> &mdash; TC-JA-013 is a bug-detection test written to confirm BUG-012.
     It is not a broken test.
   </p>
 
-  <!-- â•â•â•â• 2. ENVIRONMENT â•â•â•â• -->
   <div class="section-title">2. Test Environment</div>
   <table class="env-table">
-    <tr><td>Application Under Test</td><td>Tichi App (Stage) â€” https://tichi-app-webapp-stage.web.app</td></tr>
+    <tr><td>Application Under Test</td><td>Tichi App (Stage) &mdash; https://tichi-app-webapp-stage.web.app</td></tr>
     <tr><td>Module Tested</td><td>Job Application &amp; Search Feature</td></tr>
     <tr><td>Automation Tool</td><td>Selenium WebDriver 4.15.0 (Java)</td></tr>
     <tr><td>Test Framework</td><td>TestNG 7.8.0</td></tr>
@@ -151,14 +137,13 @@
     <tr><td>Language</td><td>Java 11</td></tr>
     <tr><td>Browser</td><td>Google Chrome 147 (headful)</td></tr>
     <tr><td>Design Pattern</td><td>Page Object Model (POM)</td></tr>
-    <tr><td>Execution Date</td><td>03 May 2026, 03:01 â€“ 03:04 IST</td></tr>
+    <tr><td>Execution Date</td><td>03 May 2026, 03:01 &mdash; 03:04 IST</td></tr>
     <tr><td>Total Execution Time</td><td>~3 minutes 18 seconds</td></tr>
   </table>
 
-  <!-- â•â•â•â• 3. TEST RESULTS â•â•â•â• -->
   <div class="section-title">3. Detailed Test Results</div>
 
-  <p style="font-size:13px; color:#555; margin-bottom:14px;"><strong>Module 1 â€” Job Application (TC-JA-001 to TC-JA-010)</strong></p>
+  <p style="font-size:13px; color:#555; margin-bottom:14px;"><strong>Module 1 &mdash; Job Application (TC-JA-001 to TC-JA-010)</strong></p>
   <table class="results-table">
     <thead>
       <tr>
@@ -201,7 +186,7 @@
       <tr>
         <td class="tc-id">TC-JA-005</td>
         <td>Job Detail Page</td>
-        <td>Click "Looking for Automation Tester" â†’ verify detail page shows compensation, type, location, and posted by.</td>
+        <td>Click "Looking for Automation Tester" &rarr; verify detail page shows compensation, type, location, and posted by.</td>
         <td><span class="badge pass">PASS</span></td>
         <td>Navigated via My Requests (job hidden from All Posts after applying)</td>
       </tr>
@@ -229,7 +214,7 @@
       <tr>
         <td class="tc-id">TC-JA-009</td>
         <td>Application Timestamp</td>
-        <td>On the job detail page, verify "Requested atâ€¦" timestamp is shown after applying.</td>
+        <td>On the job detail page, verify "Requested at..." timestamp is shown after applying.</td>
         <td><span class="badge pass">PASS</span></td>
         <td>Timestamp element visible with date and time</td>
       </tr>
@@ -238,12 +223,12 @@
         <td>No Duplicate Application</td>
         <td>Verify Request button is gone for an already-applied job. Only Withdraw is shown.</td>
         <td><span class="badge pass">PASS</span></td>
-        <td>Request button absent; Withdraw present â€” duplicate prevented</td>
+        <td>Request button absent; Withdraw present &mdash; duplicate prevented</td>
       </tr>
     </tbody>
   </table>
 
-  <p style="font-size:13px; color:#555; margin: 24px 0 14px;"><strong>Module 2 â€” Search Feature (TC-JA-011 to TC-JA-013)</strong></p>
+  <p style="font-size:13px; color:#555; margin: 24px 0 14px;"><strong>Module 2 &mdash; Search Feature (TC-JA-011 to TC-JA-013)</strong></p>
   <table class="results-table">
     <thead>
       <tr>
@@ -272,34 +257,32 @@
       <tr>
         <td class="tc-id">TC-JA-013</td>
         <td>Search Relevance (BUG-012)</td>
-        <td>On the Home page, type "driver" in the search autocomplete. Verify "Software Test Engineer" does NOT appear â€” it is irrelevant to "driver".</td>
-        <td><span class="badge fail">FAIL â˜…</span></td>
-        <td class="note-bug">BUG-012 CONFIRMED â€” "Software Test Engineer" appears twice in autocomplete for "driver" query</td>
+        <td>On the Home page, type "driver" in the search autocomplete. Verify "Software Test Engineer" does NOT appear &mdash; it is irrelevant to "driver".</td>
+        <td><span class="badge fail">FAIL &#9733;</span></td>
+        <td class="note-bug">BUG-012 CONFIRMED &mdash; "Software Test Engineer" appears twice in autocomplete for "driver" query</td>
       </tr>
     </tbody>
   </table>
-  <p style="font-size:12px; color:#888; margin-top:8px;">â˜… This failure is intentional and expected. TC-JA-013 is a bug-detection test, not a broken test.</p>
+  <p style="font-size:12px; color:#888; margin-top:8px;">&#9733; This failure is intentional and expected. TC-JA-013 is a bug-detection test, not a broken test.</p>
 
-  <!-- â•â•â•â• 4. BUG REPORT â•â•â•â• -->
   <div class="section-title">4. Bug Report</div>
   <div class="bug-box">
-    <h3>BUG-012 â€” Home Page Search Autocomplete Returns Irrelevant Results</h3>
+    <h3>BUG-012 &mdash; Home Page Search Autocomplete Returns Irrelevant Results</h3>
     <div class="bug-row"><span class="label">Bug ID</span><span>BUG-012</span></div>
     <div class="bug-row"><span class="label">Severity</span><span>Medium</span></div>
     <div class="bug-row"><span class="label">Priority</span><span>High</span></div>
-    <div class="bug-row"><span class="label">Module</span><span>Home Page â€” Search Autocomplete</span></div>
+    <div class="bug-row"><span class="label">Module</span><span>Home Page &mdash; Search Autocomplete</span></div>
     <div class="bug-row"><span class="label">URL</span><span>https://tichi-app-webapp-stage.web.app/home</span></div>
     <div class="bug-row"><span class="label">Detected by</span><span>TC-JA-013 (automated test)</span></div>
     <div class="bug-row"><span class="label">Steps to Reproduce</span>
       <span>1. Open the Home page<br>2. Click the search input field<br>3. Type "driver"<br>4. Observe the autocomplete suggestion dropdown</span>
     </div>
     <div class="bug-row"><span class="label">Expected Result</span><span>Suggestions should only show jobs/titles relevant to the keyword "driver"</span></div>
-    <div class="bug-row"><span class="label">Actual Result</span><span>"Software Test Engineer" appears twice in the dropdown â€” completely unrelated to "driver"</span></div>
+    <div class="bug-row"><span class="label">Actual Result</span><span>"Software Test Engineer" appears twice in the dropdown &mdash; completely unrelated to "driver"</span></div>
     <div class="bug-row"><span class="label">Evidence</span><span>Screenshot: FAIL_TC_JA_013_SearchRelevance_20260503_030409.png (see Section 5)</span></div>
   </div>
 
-  <!-- â•â•â•â• 5. SCREENSHOTS â•â•â•â• -->
-  <div class="section-title">5. Test Evidence â€” Screenshots</div>
+  <div class="section-title">5. Test Evidence &mdash; Screenshots</div>
   <p style="font-size:13px; color:#555; margin-bottom:16px;">
     Screenshots are captured automatically after every test by <code>ScreenshotListener.java</code>.
     Saved to <code>screenshots/</code>.
@@ -309,89 +292,87 @@
 
     <div class="ss-card">
       <img src="screenshots/PASS_TC_JA_001_Login_20260503_030114.png" alt="TC-JA-001" />
-      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-001 â€” Login</div>
+      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-001 &mdash; Login</div>
     </div>
 
     <div class="ss-card">
       <img src="screenshots/PASS_TC_JA_002_JobListingsPage_20260503_030119.png" alt="TC-JA-002" />
-      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-002 â€” Job Listings Page</div>
+      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-002 &mdash; Job Listings Page</div>
     </div>
 
     <div class="ss-card">
       <img src="screenshots/PASS_TC_JA_003_FilterPanel_20260503_030119.png" alt="TC-JA-003" />
-      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-003 â€” Filter Panel</div>
+      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-003 &mdash; Filter Panel</div>
     </div>
 
     <div class="ss-card">
       <img src="screenshots/PASS_TC_JA_004_JobCardDetails_20260503_030119.png" alt="TC-JA-004" />
-      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-004 â€” Job Card Details</div>
+      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-004 &mdash; Job Card Details</div>
     </div>
 
     <div class="ss-card">
       <img src="screenshots/PASS_TC_JA_005_JobDetailPage_20260503_030150.png" alt="TC-JA-005" />
-      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-005 â€” Job Detail Page</div>
+      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-005 &mdash; Job Detail Page</div>
     </div>
 
     <div class="ss-card">
       <img src="screenshots/PASS_TC_JA_006_RequestButton_20260503_030211.png" alt="TC-JA-006" />
-      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-006 â€” Request / Withdraw Button</div>
+      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-006 &mdash; Request / Withdraw Button</div>
     </div>
 
     <div class="ss-card">
       <img src="screenshots/PASS_TC_JA_007_ApplyForJob_20260503_030232.png" alt="TC-JA-007" />
-      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-007 â€” Apply for Job</div>
+      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-007 &mdash; Apply for Job</div>
     </div>
 
     <div class="ss-card">
       <img src="screenshots/PASS_TC_JA_008_JobInMyRequests_20260503_030234.png" alt="TC-JA-008" />
-      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-008 â€” Job in My Requests</div>
+      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-008 &mdash; Job in My Requests</div>
     </div>
 
     <div class="ss-card">
       <img src="screenshots/PASS_TC_JA_009_ApplicationTimestamp_20260503_030305.png" alt="TC-JA-009" />
-      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-009 â€” Application Timestamp</div>
+      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-009 &mdash; Application Timestamp</div>
     </div>
 
     <div class="ss-card">
       <img src="screenshots/PASS_TC_JA_010_NoDuplicateApplication_20260503_030355.png" alt="TC-JA-010" />
-      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-010 â€” No Duplicate Application</div>
+      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-010 &mdash; No Duplicate Application</div>
     </div>
 
     <div class="ss-card">
       <img src="screenshots/PASS_TC_JA_011_SearchBarVisible_20260503_030400.png" alt="TC-JA-011" />
-      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-011 â€” Search Bar Visible</div>
+      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-011 &mdash; Search Bar Visible</div>
     </div>
 
     <div class="ss-card">
       <img src="screenshots/PASS_TC_JA_012_InvalidSearchNoResults_20260503_030402.png" alt="TC-JA-012" />
-      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-012 â€” Invalid Search No Results</div>
+      <div class="ss-label pass"><div class="dot pass"></div>TC-JA-012 &mdash; Invalid Search No Results</div>
     </div>
 
     <div class="ss-card">
       <img src="screenshots/FAIL_TC_JA_013_SearchRelevance_20260503_030409.png" alt="TC-JA-013" />
-      <div class="ss-label fail"><div class="dot fail"></div>TC-JA-013 â€” BUG-012 Confirmed (Expected FAIL)</div>
+      <div class="ss-label fail"><div class="dot fail"></div>TC-JA-013 &mdash; BUG-012 Confirmed (Expected FAIL)</div>
     </div>
 
   </div>
 
-  <!-- â•â•â•â• 6. CONCLUSION â•â•â•â• -->
   <div class="section-title">6. Conclusion</div>
   <table class="env-table">
     <tr><td>Tests Automated</td><td>13 test cases across 2 modules (Job Application + Search Feature)</td></tr>
-    <tr><td>Pass Rate</td><td>92.3% (12/13) â€” the 1 failure is intentional bug detection</td></tr>
-    <tr><td>Bugs Found</td><td>1 â€” BUG-012 (Home page search autocomplete returns irrelevant results)</td></tr>
+    <tr><td>Pass Rate</td><td>92.3% (12/13) &mdash; the 1 failure is intentional bug detection</td></tr>
+    <tr><td>Bugs Found</td><td>1 &mdash; BUG-012 (Home page search autocomplete returns irrelevant results)</td></tr>
     <tr><td>Coverage</td><td>Login, job browsing, filtering, job detail, apply/withdraw flow, My Requests, timestamps, duplicate prevention, search bar, invalid search, search relevance</td></tr>
     <tr><td>Report Location</td><td>target/surefire-reports/index.html (TestNG HTML report)</td></tr>
     <tr><td>Screenshots Location</td><td>screenshots/ (auto-captured after every test)</td></tr>
-    <tr><td>Source Code</td><td>tichi-selenium/ (Maven project â€” run with: mvn clean test)</td></tr>
+    <tr><td>Source Code</td><td>tichi-selenium/ (Maven project &mdash; run with: mvn clean test)</td></tr>
   </table>
 
 </div>
 
 <div class="footer">
-  Automation Testing Report &nbsp;|&nbsp; Tichi App â€” Job Application Module &nbsp;|&nbsp; Tester: Paramesh &nbsp;|&nbsp; 03 May 2026
+  Automation Testing Report &nbsp;|&nbsp; Tichi App &mdash; Job Application Module &nbsp;|&nbsp; Tester: Paramesh &nbsp;|&nbsp; 03 May 2026
 </div>
 
 </body>
 </html>
-
