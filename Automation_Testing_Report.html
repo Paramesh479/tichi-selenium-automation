@@ -95,7 +95,7 @@
   <h1>Automation Testing Report</h1>
   <p>Tichi App - Job Application and Search Feature Module</p>
   <div class="header-meta">
-    <span><strong>Date:</strong> 03 May 2026</span>
+    <span><strong>Date:</strong> <span id="report-date"></span></span>
     <span><strong>Tester:</strong> Paramesh</span>
     <span><strong>App URL:</strong> https://tichi-app-webapp-stage.web.app</span>
     <span><strong>Tool:</strong> Selenium WebDriver + TestNG + Maven</span>
@@ -349,5 +349,11 @@
   Automation Testing Report | Tichi App - Job Application Module | Tester: Paramesh | 03 May 2026
 </div>
 
+<script>
+  var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var d = new Date();
+  var dateStr = d.getDate() + " " + months[d.getMonth()] + " " + d.getFullYear();
+  document.getElementById("report-date").textContent = dateStr;
+</script>
 </body>
 </html>
